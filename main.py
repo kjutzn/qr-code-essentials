@@ -2,7 +2,6 @@ import qrcode
 from PIL import Image
 
 
-# Function to create a Wi-Fi QR code
 def create_wifi_qr(ssid, password):
     wifi_data = f"WIFI:T:WPA;S:{ssid};P:{password};;"
     qr = qrcode.QRCode(
@@ -17,7 +16,6 @@ def create_wifi_qr(ssid, password):
     return img
 
 
-# Function to create a URL QR code
 def create_url_qr(url):
     qr = qrcode.QRCode(
         version=1,
@@ -49,8 +47,7 @@ def main():
         print("Invalid choice")
         return
 
-    # Save the QR code as a PNG file in the current directory
-    filename = input("Enter the filename (without extension): ")
+    filename = input("How do you want file to be named? ")
     qr_img.save(f"{filename}.png")
 
     print(f"QR Code saved as {filename}.png")
