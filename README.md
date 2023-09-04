@@ -1,7 +1,8 @@
 # qr-code-essentials
 Easy to use QR code generator. Using qrcode package
 
-Gui and and builded versions will be added probabbly next week.
+## Known issues:
+-You need to save QR code image and manually enter it. Previewing it directly crashes whole program!!!
 
-### Still in beta
+### Release v1 expected with all known issues fixed is expected tommorow.
 
